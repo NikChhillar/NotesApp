@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg"
+    tools:context=".ui.adapter.fragment.CreateNoteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTitleFC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/acme"
+            android:textColorHint="#CAC4C4"
+            android:background="@drawable/edit_text_shape"
+            android:hint="Title..."/>
+
+        <EditText
+            android:id="@+id/etSubTitleFC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="5"
+            android:fontFamily="@font/acme"
+            android:textColorHint="#CAC4C4"
+            android:background="@drawable/edit_text_shape"
+            android:hint="Subtitle..."/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivGreenFC"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/green_dot"/>
+
+            <ImageView
+                android:id="@+id/ivYellowFC"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/yellow_dot"/>
+
+            <ImageView
+                android:id="@+id/ivRedFC"
+                android:layout_width="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="25dp"
+                android:background="@drawable/red_dot"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etNotesFC"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/acme"
+            android:textColorHint="#CAC4C4"
+            android:gravity="start"
+            android:background="@drawable/edit_text_shape"
+            android:hint="Notes..."/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+        app:backgroundTint="@color/tc"
+        android:src="@drawable/ic_baseline_done_24"
+        android:id="@+id/btnSaveBtn"/>
+
+
+</FrameLayout>
